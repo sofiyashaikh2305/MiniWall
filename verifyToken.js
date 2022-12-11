@@ -2,7 +2,7 @@ const { send } = require('express/lib/response')
 require('dotenv')
 const jsonwebtoken = require('jsonwebtoken')
 
-const UserModel = require('../MiniWall/models/User')
+const UserModel = require('./models/User')
 
 async function  auth(req, res, next){
     const token = req.header('auth-token')
