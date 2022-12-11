@@ -18,7 +18,7 @@ const likeCommentRoute = require('./routes/likeComment')
 app.use(bodyParser. json())
 app.use('/posts', postRoute) //Post - Create, Update, Delete, Read
 app.use('/user', authRoute) //
-app.use('/', likeCommentRoute) // comments and likes
+app.use('/comment', likeCommentRoute) // comments and likes
 
 
 //Create a route
